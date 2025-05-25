@@ -1,0 +1,686 @@
+{
+    "workbench.startupEditor": "none",
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "workbench.statusBar.visible": false,
+    "editor.minimap.scale": 2,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.autohide": true,
+    "workbench.editor.showTabs": "none",
+    "workbench.editor.tabSizing": "fit",
+    "window.density.editorTabHeight": "compact",
+    "breadcrumbs.enabled": false,
+    "files.exclude": {
+        "": true,
+        "**/.classpath": true,
+        "**/.DS_Store": true,
+        "**/.factorypath": true,
+        "**/.hg": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/CVS": true,
+        "**/Thumbs.db": true
+    },
+    "zenMode.hideLineNumbers": false,
+    "zenMode.centerLayout": false,
+    "editor.cursorStyle": "line",
+    "editor.cursorSmoothCaretAnimation": "off",
+    "editor.fontSize": 11,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontSize": 11,
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.external.osxExec": "Alacritty:q.app",
+    "editor.rulers": [
+        {
+            "column": 88,
+            "color": "#272727"
+        }
+    ],
+    "editor.cursorSurroundingLines": 10,
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+    "background.enabled": true,
+    "background.fullscreen": {
+        "images": [
+            "https://preview.redd.it/napoleon-wallpaper-4k-ai-extended-and-upscaled-v0-yi21uic02jhb1.png?auto=webp&s=d6571a06907c8429834ea0841231ae594db60934"
+        ],
+        "opacity": 0.92,
+        "size": "cover",
+        "position": "center",
+        "interval": 0
+    },
+    "editor.stickyScroll.enabled": true,
+    "vim.leader": " ",
+    "vim.smartRelativeLine": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "#a9dc7660",
+    "vim.highlightedyank.duration": 250,
+    "[vsnetrw]": {
+        "editor.lineNumbers": "on",
+        "editor.minimap.enabled": false,
+        "editor.renderWhitespace": "none"
+    },
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["vsnetrw.open"]
+            // "when": "editorLangId != vsnetrw"
+        },
+        {
+            "before": ["<leader>", "h"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["<leader>", "r", "n"],
+            "commands": ["editor.action.rename"]
+        },
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["workbench.view.explorer"]
+        },
+        // {
+        //     "before": ["H"],
+        //     "commands": ["workbench.action.previousEditor"]
+        // },
+        // {
+        //     "before": ["L"],
+        //     "commands": ["workbench.action.nextEditor"]
+        // },
+        // {
+        //     "before": ["<leader>", "v"],
+        //     "commands": ["workbench.action.splitEditor"]
+        // },
+        // {
+        //     "before": ["<leader>", "s"],
+        //     "commands": ["workbench.action.splitEditorDown"]
+        // },
+        // {
+        //     "before": ["<leader>", "h"],
+        //     "commands": ["workbench.action.focusLeftGroup"]
+        // },
+        // {
+        //     "before": ["<leader>", "l"],
+        //     "commands": ["workbench.action.focusRightGroup"]
+        // },
+        // {
+        //     "before": ["<leader>", "k"],
+        //     "commands": ["workbench.action.focusAboveGroup"]
+        // },
+        // {
+        //     "before": ["<leader>", "j"],
+        //     "commands": ["workbench.action.focusBelowGroup"]
+        // },
+        {
+            "before": ["<leader>", "z"],
+            "commands": ["find-it-faster.findFile"]
+        },
+        {
+            "before": ["g", "p", "d"],
+            "commands": ["editor.action.peekDefinition"]
+        },
+        {
+            "before": ["g", "h"],
+            "commands": ["editor.action.showDefinitionPreviewHover"]
+        },
+        {
+            "before": ["g", "i"],
+            "commands": ["editor.action.goToImplementation"]
+        },
+        {
+            "before": ["g", "p", "i"],
+            "commands": ["editor.action.peekImplementation"]
+        },
+        {
+            "before": ["g", "q"],
+            "commands": ["editor.action.quickFix"]
+        },
+        {
+            "before": ["g", "r"],
+            "commands": ["editor.action.referenceSearch.trigger"]
+        },
+        {
+            "before": ["g", "t"],
+            "commands": ["editor.action.goToTypeDefinition"]
+        },
+        {
+            "before": ["g", "p", "t"],
+            "commands": ["editor.action.peekTypeDefinition"]
+        },
+        {
+            "before": ["<C-e>"],
+            "after": ["<C-d>"]
+        },
+        {
+            "before": ["<C-y>"],
+            "after": ["<C-u>"]
+        },
+        {
+            "before": ["<leader>", "h", "a"],
+            "commands": ["vscode-harpoon.addEditor"]
+        },
+        {
+            "before": ["<leader>", "h", "e"],
+            "commands": ["vscode-harpoon.editEditors"]
+        },
+        // {
+        //     "before": ["<leader>", "p", "e"],
+        //     "commands": ["vscode-harpoon.editorQuickPick"]
+        // },
+        {
+            "before": ["<leader>", "1"],
+            "commands": ["vscode-harpoon.gotoEditor1"]
+        },
+        {
+            "before": ["<leader>", "2"],
+            "commands": ["vscode-harpoon.gotoEditor2"]
+        },
+        {
+            "before": ["<leader>", "3"],
+            "commands": ["vscode-harpoon.gotoEditor3"]
+        },
+        {
+            "before": ["<leader>", "4"],
+            "commands": ["vscode-harpoon.gotoEditor4"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["L"],
+            "after": ["$"] // L to end of line
+        },
+        {
+            "before": ["H"],
+            "after": ["^"] // H to start of first word (can use '0' if you want to go to absolute start)
+        },
+        {
+            "before": ["<leader>", "s", "f"],
+            "commands": ["workbench.action.quickOpen"] // Opens file search
+        },
+        {
+            "before": ["<leader>", "s", "w"],
+            "commands": ["workbench.action.findInFiles"] // Project-wide search
+        }
+        // {
+        //     "before": ["<leader>", "s", "w"],
+        //     "commands": ["actions.find"] // Opens find in file (word search)
+        //   }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [">"],
+            "after": [">", "g", "v"]
+        },
+        {
+            "before": ["<"],
+            "after": ["<", "g", "v"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["J"],
+            "commands": ["editor.action.moveLinesDownAction"]
+        },
+        {
+            "before": ["K"],
+            "commands": ["editor.action.moveLinesUpAction"]
+        }
+    ],
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[markdown]": {
+        "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.quickSuggestions": {
+            "other": "on",
+            "comments": "on",
+            "strings": "on"
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[go]": {
+        "editor.insertSpaces": true,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "golang.go"
+    },
+    "[python]": {
+        "editor.formatOnType": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "emmet.showExpandedAbbreviation": "always",
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "vue-html": "html",
+        "razor": "html",
+        "plaintext": "jade",
+        "html": "html"
+    },
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "editor.linkedEditing": true,
+    "javascript.preferences.renameMatchingJsxTags": true,
+    "typescript.preferences.renameMatchingJsxTags": true,
+    "files.associations": {
+        ".*xml": "html",
+        ".*svg": "html",
+        "*html": "html",
+        "*njk": "html"
+    },
+    "tailwindCSS.emmetCompletions": true,
+    "tailwindCSS.includeLanguages": {
+        "plaintext": "javascript"
+    },
+    "css.lint.unknownAtRules": "ignore",
+    "css.validate": true,
+    "scss.validate": false,
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": true
+    },
+    "colorize.languages": ["typescript", "javascript", "css", "scss"],
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.disableAutomaticTypeAcquisition": true,
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "importSorter.generalConfiguration.sortOnBeforeSave": true,
+    "importSorter.importStringConfiguration.quoteMark": "double",
+    "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.count": 80,
+    "importSorter.importStringConfiguration.maximumNumberOfImportExpressionsPerLine.type": "newLineEachExpressionAfterCountLimit",
+    "importSorter.importStringConfiguration.tabSize": 4,
+    "importSorter.importStringConfiguration.trailingComma": "multiLine",
+    "notebook.lineNumbers": "on",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "scm.diffDecorations": "all",
+    "editor.inlineSuggest.enabled": true,
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.terminal.paste"
+    ],
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "yaml": false,
+        "python": false,
+        "rust": false,
+        "csharp": true,
+        "typescript": false,
+        "go": false
+    },
+    "redhat.telemetry.enabled": false,
+    "aws.telemetry": false,
+    "search.exclude": {
+        "**/node_modules": false
+    },
+    "yaml.customTags": [
+        "!And",
+        "!And sequence",
+        "!If",
+        "!If sequence",
+        "!Not",
+        "!Not sequence",
+        "!Equals",
+        "!Equals sequence",
+        "!Or",
+        "!Or sequence",
+        "!FindInMap",
+        "!FindInMap sequence",
+        "!Base64",
+        "!Join",
+        "!Join sequence",
+        "!Cidr",
+        "!Ref",
+        "!Sub",
+        "!Sub sequence",
+        "!GetAtt",
+        "!GetAZs",
+        "!ImportValue",
+        "!ImportValue sequence",
+        "!Select",
+        "!Select sequence",
+        "!Split",
+        "!Split sequence"
+    ],
+    "terminal.integrated.env.osx": {},
+    "git.autofetch": true,
+    "explorer.compactFolders": false,
+    "update.mode": "manual",
+    "rust-analyzer.inlayHints.parameterHints.enable": true,
+    "excalidraw.theme": "dark",
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "codium.codeCompletion.enable": true,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.iconTheme": "vs-nomo-dark",
+    "continue.enableTabAutocomplete": true,
+    "tabby.api.endpoint": "http://localhost:8080",
+    "codeium.enableCodeLens": false,
+    "playwright.reuseBrowser": false,
+    "codeium.enableConfig": {
+        "*": true,
+        "mdx": true,
+        "markdown": true,
+        "nginx": true
+    },
+    "cSpell.userWords": [
+        "actix",
+        "addgroup",
+        "adduser",
+        "Akash",
+        "akashdas",
+        "apiserver",
+        "appendfsync",
+        "appendonly",
+        "aputra",
+        "asgi",
+        "Astro",
+        "asyncpg",
+        "autoflush",
+        "AUTOINCREMENT",
+        "Autoscaler",
+        "barebones",
+        "bgrewriteaof",
+        "bgsave",
+        "BUSYGROUP",
+        "CGPA",
+        "cgroups",
+        "chakra",
+        "cloudinary",
+        "clsx",
+        "clusterrolebindings",
+        "clusterroles",
+        "cmdk",
+        "cmds",
+        "codingame",
+        "colocation",
+        "competeted",
+        "containerd",
+        "cooldown",
+        "createable",
+        "crictl",
+        "Cubano",
+        "Cypher",
+        "Datagram",
+        "datagrams",
+        "datetime",
+        "deactive",
+        "debootstrap",
+        "deinitialize",
+        "deinitialized",
+        "Deno",
+        "denoland",
+        "deque",
+        "devbox",
+        "distro",
+        "Distroless",
+        "dnsmasq",
+        "dockercontainer",
+        "Dockerfiles",
+        "dotenvx",
+        "dtype",
+        "dunder",
+        "envsubst",
+        "EPAM",
+        "everforest",
+        "everysec",
+        "experimentations",
+        "fastapi",
+        "fastify",
+        "FCOM",
+        "Fernet",
+        "fileupload",
+        "Fira",
+        "Fireship",
+        "Flexbox",
+        "followee",
+        "followees",
+        "GOBIN",
+        "gopls",
+        "hackathon",
+        "Hackerrank",
+        "Hashtable",
+        "heapq",
+        "hget",
+        "hgetall",
+        "Hirevue",
+        "hocuspocus",
+        "hono",
+        "honojs",
+        "hookform",
+        "hset",
+        "httpsredirect",
+        "httpx",
+        "iconify",
+        "Idxs",
+        "ifsc",
+        "inclusivity",
+        "informercial",
+        "inno",
+        "Inorder",
+        "isnot",
+        "jsonable",
+        "jwilder",
+        "Kadane",
+        "Kadane’s",
+        "killall",
+        "Kompose",
+        "KUBECONFIG",
+        "kubectx",
+        "Kubelet",
+        "langhelpers",
+        "langserver",
+        "languageservice",
+        "ldrs",
+        "leetcode",
+        "levelname",
+        "llen",
+        "loadbalance",
+        "loadbalancer",
+        "lpop",
+        "lpush",
+        "lrange",
+        "lrem",
+        "lset",
+        "lucide",
+        "maxlength",
+        "Medable",
+        "MERN",
+        "millicores",
+        "mkstream",
+        "monasans",
+        "mongosh",
+        "Monokai",
+        "MVCC",
+        "myapp",
+        "nameserver",
+        "nestjs",
+        "networkpolicies",
+        "Neue",
+        "nextjs",
+        "NGOs",
+        "nlex",
+        "nlogn",
+        "nocheck",
+        "nodeport",
+        "noload",
+        "npipe",
+        "nums",
+        "OLAP",
+        "OLTP",
+        "ondelete",
+        "onnotice",
+        "onupdate",
+        "openapi",
+        "Organisations",
+        "partialize",
+        "PCOM",
+        "peasy",
+        "persistentvolumeclaims",
+        "pingwheel",
+        "pino",
+        "pkgroll",
+        "pnpx",
+        "podsecuritypolicies",
+        "popleft",
+        "Postorder",
+        "Preorder",
+        "prereq",
+        "protobuf",
+        "psql",
+        "pydantic",
+        "pyright",
+        "Pytest",
+        "RDBMS",
+        "readling",
+        "redisinsight",
+        "replicaset",
+        "replicasets",
+        "resave",
+        "rolebinding",
+        "rolebindings",
+        "rpush",
+        "Runtimes",
+        "rustc",
+        "rustup",
+        "sadd",
+        "securepassword",
+        "serv",
+        "sessionmaker",
+        "setnx",
+        "shadcn",
+        "shiki",
+        "shikijs",
+        "showchanges",
+        "signup",
+        "sismember",
+        "smembers",
+        "SNMP",
+        "sqlalchemy",
+        "Stackoverflow",
+        "statefulsets",
+        "stddev",
+        "strs",
+        "struct",
+        "Subarray",
+        "Superday",
+        "svgr",
+        "svgs",
+        "tailwindcss",
+        "tanstack",
+        "taplo",
+        "Taskfile",
+        "TCPDUMP",
+        "Telus",
+        "testid",
+        "thusfar",
+        "timesheet",
+        "tmpfs",
+        "toplevel",
+        "transformative",
+        "Treap",
+        "trivago",
+        "Troogue",
+        "trpc",
+        "trustedhost",
+        "tsquery",
+        "tsvector",
+        "typefox",
+        "unfollow",
+        "unhased",
+        "unhash",
+        "unhashed",
+        "unupdateable",
+        "Updateable",
+        "upsert",
+        "usehooks",
+        "uselist",
+        "usermod",
+        "uvicorn",
+        "varbind",
+        "varbinds",
+        "venv",
+        "vite",
+        "vitesse",
+        "Walsheim",
+        "Websockets",
+        "withscores",
+        "Wolfi",
+        "WORKDIR",
+        "xadd",
+        "xgroup",
+        "xreadgroup",
+        "zadd",
+        "zrange",
+        "zustand"
+    ],
+    "tailwindCSS.experimental.classRegex": [
+        "tw`([^`]*)",
+        ["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+        ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+        ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"]
+    ],
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "[yaml]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[nginx]": {
+        "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+    },
+    "cursor.cpp.disabledLanguages": ["scminput", "rust", "go"],
+    "vs-kubernetes": {
+        "vscode-kubernetes.helm-path-mac": "/Users/akashdas/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+        "vscode-kubernetes.minikube-path-mac": "/Users/akashdas/.vs-kubernetes/tools/minikube/darwin-arm64/minikube",
+        "vs-kubernetes.minikube-show-information-expiration": "2025-03-19T06:24:32.433Z"
+    },
+    "workbench.activityBar.location": "top",
+    "robot.python.executable": "/Users/akashdas/Library/Caches/pypoetry/virtualenvs/robot-with-python-HTNvqGPn-py3.12/bin/python",
+    "window.zoomLevel": 2,
+    "database-client.autoSync": true,
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.editorActionsLocation": "hidden"
+    // "yaml.schemas": { "kubernetes": "*.yaml" }
+}

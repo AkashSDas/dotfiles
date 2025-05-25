@@ -1,5 +1,5 @@
-# dotfiles
+# Config Files
 
-🔫 Repo for all of my dotfiles.
-
-- `nvim` - NeoVim
+- Ghostty
+- NeoVim
+- Tmux

@@ -1,0 +1,156 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        // https://stackoverflow.com/questions/32279384/keyboard-shortcut-to-show-hover-tooltip#:~:text=Put%20the%20cursor%20over%20the,CMD%2FCtrl%20%2B%20press%20K.
+        "key": "cmd+k",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+space e",
+        "command": "vsnetrw.open",
+        "when": "!editorHasAnyDocument"
+    },
+
+    {
+        "key": "ctrl+0",
+        "command": "workbench.action.increaseViewSize"
+    },
+    {
+        "key": "ctrl+9",
+        "command": "workbench.action.decreaseViewSize"
+    },
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "workbench.action.splitEditorDown"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusBelowGroup"
+    },
+
+    // Navigation for terminal
+    // {
+    //     "key": "shift+j",
+    //     "command": "workbench.action.togglePanel",
+    //     "when": "vim.mode == 'Normal'"
+    // },
+    // {
+    //     "key": "shift+a",
+    //     "command": "workbench.action.terminal.focusNext",
+    //     "when": "terminalFocus"
+    // },
+    // {
+    //     "key": "shift+b",
+    //     "command": "workbench.action.terminal.focusPrevious",
+    //     "when": "terminalFocus"
+    // },
+    {
+        "key": "shift+n",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+
+    // you can remap the keys you use to go up and down in opened menus to be more intuitive by being close to the original Vim up and down motion p & n
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+
+    // https://dev.to/ansonh/10-vs-code-vim-tricks-to-boost-your-productivity-1b0n
+    // Scroll in Show Hover for doc tooltip (o is for opening and closing by default)
+    {
+        "key": "h",
+        "command": "editor.action.scrollLeftHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "j",
+        "command": "editor.action.scrollDownHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "k",
+        "command": "editor.action.scrollUpHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "l",
+        "command": "editor.action.scrollRightHover",
+        "when": "editorHoverFocused"
+    },
+
+    // File explorer
+    {
+        "key": "space f",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "x",
+        "command": "filesExplorer.cut",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "y",
+        "command": "filesExplorer.copy",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "p",
+        "command": "filesExplorer.paste",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "d",
+        "command": "deleteFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+
+    // Find it faster
+    {
+        "key": "shift+cmd+j",
+        "command": "find-it-faster.findFiles"
+    },
+    {
+        "key": "shift+cmd+u",
+        "command": "find-it-faster.findWithinFiles"
+    }
+]
