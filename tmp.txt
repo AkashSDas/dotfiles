@@ -1,0 +1,569 @@
+// User settings.json
+
+{
+    "update.mode": "default",
+
+    "window.commandCenter": false,
+    "window.zoomLevel": 1.4,
+    "explorer.compactFolders": false,
+    "breadcrumbs.enabled": false,
+
+    "search.exclude": {
+        "**/node_modules": false
+    },
+
+    // Git
+    "git.autofetch": true,
+    "scm.diffDecorations": "all",
+
+    "zenMode.hideLineNumbers": false,
+    "zenMode.centerLayout": false,
+
+    "files.exclude": {
+        "": true,
+        "**/.classpath": true,
+        "**/.DS_Store": true,
+        "**/.factorypath": true,
+        "**/.hg": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/CVS": true,
+        "**/Thumbs.db": true
+    },
+    // "files.associations": {
+    //     ".*xml": "html",
+    //     ".*svg": "html",
+    //     "*html": "html",
+    //     "*njk": "html"
+    // },
+
+    // ==========================================================
+    // Workbench
+    // ==========================================================
+
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.visible": true, // bottom bar
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.iconTheme": "vs-nomo-dark",
+    "workbench.layoutControl.enabled": false,
+    "workbench.editor.showTabs": "none",
+    "workbench.activityBar.location": "top",
+    "workbench.editor.tabSizing": "fit",
+    "window.density.editorTabHeight": "compact",
+
+    // ==========================================================
+    // Editor
+    // ==========================================================
+
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "editor.minimap.scale": 2,
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.autohide": true,
+
+    "editor.cursorStyle": "block",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontSize": 11,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.stickyScroll.enabled": true,
+
+    "editor.rulers": [
+        {
+            "column": 88,
+            "color": "#272727"
+        }
+    ],
+    "editor.cursorSurroundingLines": 10,
+    "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?",
+
+    "editor.quickSuggestions": {
+        "other": "on",
+        "comments": "off",
+        "strings": true
+    },
+    "editor.inlineSuggest.enabled": true,
+
+    "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+
+    // ==========================================================
+    // Terminal
+    // ==========================================================
+
+    "terminal.integrated.fontFamily": "Fira Code",
+    "terminal.integrated.fontSize": 11,
+    "terminal.integrated.cursorStyle": "block",
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.terminal.paste"
+    ],
+
+    // ==========================================================
+    // Vim
+    // ==========================================================
+
+    // Enable repeating keys for VSCode
+    // To disable: defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+    // To enable: defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool true
+
+    "vim.leader": " ",
+    "vim.smartRelativeLine": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "#a9dc7660",
+    "vim.highlightedyank.duration": 250,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": ["j", "j"],
+            "after": ["<esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["vsnetrw.open"]
+            // "when": "editorLangId != vsnetrw"
+        },
+        {
+            "before": ["<leader>", "h"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["<leader>", "r", "n"],
+            "commands": ["editor.action.rename"]
+        },
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["workbench.view.explorer"]
+        },
+
+        // Not needed anymore (as this keybindings are used for going to start and end of a line)
+        // {
+        //     "before": ["H"],
+        //     "commands": ["workbench.action.previousEditor"]
+        // },
+        // {
+        //     "before": ["L"],
+        //     "commands": ["workbench.action.nextEditor"]
+        // },
+
+        // This is managed by keyboard bindings
+        // {
+        //     "before": ["<leader>", "v"],
+        //     "commands": ["workbench.action.splitEditor"]
+        // },
+        // {
+        //     "before": ["<leader>", "s"],
+        //     "commands": ["workbench.action.splitEditorDown"]
+        // },
+        // {
+        //     "before": ["<leader>", "h"],
+        //     "commands": ["workbench.action.focusLeftGroup"]
+        // },
+        // {
+        //     "before": ["<leader>", "l"],
+        //     "commands": ["workbench.action.focusRightGroup"]
+        // },
+        // {
+        //     "before": ["<leader>", "k"],
+        //     "commands": ["workbench.action.focusAboveGroup"]
+        // },
+        // {
+        //     "before": ["<leader>", "j"],
+        //     "commands": ["workbench.action.focusBelowGroup"]
+        // },
+
+        // Quick editing stuff
+        {
+            "before": ["g", "p", "d"],
+            "commands": ["editor.action.peekDefinition"]
+        },
+        {
+            "before": ["g", "h"],
+            "commands": ["editor.action.showDefinitionPreviewHover"]
+        },
+        {
+            "before": ["g", "i"],
+            "commands": ["editor.action.goToImplementation"]
+        },
+        {
+            "before": ["g", "p", "i"],
+            "commands": ["editor.action.peekImplementation"]
+        },
+        {
+            "before": ["g", "q"],
+            "commands": ["editor.action.quickFix"]
+        },
+        {
+            "before": ["g", "r"],
+            "commands": ["editor.action.referenceSearch.trigger"]
+        },
+        {
+            "before": ["g", "t"],
+            "commands": ["editor.action.goToTypeDefinition"]
+        },
+        {
+            "before": ["g", "p", "t"],
+            "commands": ["editor.action.peekTypeDefinition"]
+        },
+        {
+            "before": ["<C-e>"],
+            "after": ["<C-d>"]
+        },
+        {
+            "before": ["<C-y>"],
+            "after": ["<C-u>"]
+        },
+
+        // Harpoon
+        {
+            "before": ["<leader>", "h", "a"],
+            "commands": ["vscode-harpoon.addEditor"]
+        },
+        {
+            "before": ["<leader>", "h", "e"],
+            "commands": ["vscode-harpoon.editEditors"]
+        },
+        {
+            "before": ["<leader>", "p", "e"],
+            "commands": ["vscode-harpoon.editorQuickPick"]
+        },
+        {
+            "before": ["<leader>", "1"],
+            "commands": ["vscode-harpoon.gotoEditor1"]
+        },
+        {
+            "before": ["<leader>", "2"],
+            "commands": ["vscode-harpoon.gotoEditor2"]
+        },
+        {
+            "before": ["<leader>", "3"],
+            "commands": ["vscode-harpoon.gotoEditor3"]
+        },
+        {
+            "before": ["<leader>", "4"],
+            "commands": ["vscode-harpoon.gotoEditor4"]
+        }
+
+        // Find it faster (not working). Find it faster shortcuts are present in the keybinds.json
+        // {
+        //     "before": ["<leader>", "t"],
+        //     "commands": ["find-it-faster.findFile"]
+        // }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["L"],
+            "after": ["$"] // L to end of line
+        },
+        {
+            "before": ["H"],
+            "after": ["^"] // H to start of first word (can use '0' if you want to go to absolute start)
+        },
+        {
+            "before": ["<leader>", "s", "f"],
+            "commands": ["workbench.action.quickOpen"] // Opens file search
+        },
+        {
+            "before": ["<leader>", "s", "w"],
+            "commands": ["workbench.action.findInFiles"] // Project-wide search
+        }
+        // {
+        //     "before": ["<leader>", "s", "w"],
+        //     "commands": ["actions.find"] // Opens find in file (word search)
+        //   }
+    ],
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [">"],
+            "after": [">", "g", "v"]
+        },
+        {
+            "before": ["<"],
+            "after": ["<", "g", "v"]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": ["J"],
+            "commands": ["editor.action.moveLinesDownAction"]
+        },
+        {
+            "before": ["K"],
+            "commands": ["editor.action.moveLinesUpAction"]
+        }
+    ],
+
+    "[vsnetrw]": {
+        "editor.lineNumbers": "on",
+        "editor.minimap.enabled": false,
+        "editor.renderWhitespace": "none"
+    },
+
+    // ==========================================================
+    // Language specific and formatter settings
+    // ==========================================================
+
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "python.analysis.typeCheckingMode": "standard",
+
+    "notebook.lineNumbers": "on",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+
+    // ==========================================================
+    // Others
+    // ==========================================================
+
+    // Custom right spellings
+    "cSpell.userWords": ["nnoremap", "sesv"],
+
+    "colorize.languages": ["typescript", "javascript", "css", "scss"],
+
+    "background.enabled": true,
+    "background.fullscreen": {
+        "images": [
+            "https://preview.redd.it/napoleon-wallpaper-4k-ai-extended-and-upscaled-v0-yi21uic02jhb1.png?auto=webp&s=d6571a06907c8429834ea0841231ae594db60934"
+        ],
+        "opacity": 0.92,
+        "size": "cover",
+        "position": "center",
+        "interval": 0
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "chat.commandCenter.enabled": false,
+    "workbench.editor.editorActionsLocation": "hidden"
+}
+
+// User keyboard-binding.json
+
+// Place your key bindings in this file to override the defaults
+[
+    // ==========================================================
+    // Editor
+    // ==========================================================
+
+    {
+        // https://stackoverflow.com/questions/32279384/keyboard-shortcut-to-show-hover-tooltip#:~:text=Put%20the%20cursor%20over%20the,CMD%2FCtrl%20%2B%20press%20K.
+        "key": "cmd+k",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+
+    // https://dev.to/ansonh/10-vs-code-vim-tricks-to-boost-your-productivity-1b0n
+    // Scroll in Show Hover for doc tooltip (o is for opening and closing by default)
+    {
+        "key": "h",
+        "command": "editor.action.scrollLeftHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "j",
+        "command": "editor.action.scrollDownHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "k",
+        "command": "editor.action.scrollUpHover",
+        "when": "editorHoverFocused"
+    },
+    {
+        "key": "l",
+        "command": "editor.action.scrollRightHover",
+        "when": "editorHoverFocused"
+    },
+
+    // ==========================================================
+    // Workbench
+    // ==========================================================
+
+    // Increase/decrease view size
+    {
+        "key": "ctrl+0",
+        "command": "workbench.action.increaseViewSize"
+    },
+    {
+        "key": "ctrl+9",
+        "command": "workbench.action.decreaseViewSize"
+    },
+
+    // Split windows
+    {
+        "key": "ctrl+\\",
+        "command": "workbench.action.splitEditor"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "workbench.action.splitEditorDown"
+    },
+
+    // Navigate windows
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.focusLeftGroup"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.focusRightGroup"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.focusAboveGroup"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.focusBelowGroup"
+    },
+
+    // Terminal management and navigation
+    // {
+    //     "key": "shift+j",
+    //     "command": "workbench.action.togglePanel",
+    //     "when": "vim.mode == 'Normal'"
+    // },
+    // {
+    //     "key": "shift+a",
+    //     "command": "workbench.action.terminal.focusNext",
+    //     "when": "terminalFocus"
+    // },
+    // {
+    //     "key": "shift+b",
+    //     "command": "workbench.action.terminal.focusPrevious",
+    //     "when": "terminalFocus"
+    // },
+    // {
+    //     "key": "shift+n",
+    //     "command": "workbench.action.terminal.new",
+    //     "when": "terminalFocus"
+    // },
+
+    // You can remap the keys that use to go up and down in opened menus to be more intuitive
+    // by being close to the original Vim up and down motion p & n
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+
+    // ==========================================================
+    // File explorer management
+    // ==========================================================
+
+    {
+        "key": "space f",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "n",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "x",
+        "command": "filesExplorer.cut",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "y",
+        "command": "filesExplorer.copy",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+    },
+    {
+        "key": "p",
+        "command": "filesExplorer.paste",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "d",
+        "command": "deleteFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+
+    // ==========================================================
+    // Others
+    // ==========================================================
+
+    // Not sure why I've kept it
+    // {
+    //     "key": "ctrl+space e",
+    //     "command": "vsnetrw.open",
+    //     "when": "!editorHasAnyDocument"
+    // }
+
+    // Find it faster
+    {
+        "key": "shift+cmd+j",
+        "command": "find-it-faster.findFiles"
+    },
+    {
+        "key": "shift+cmd+u",
+        "command": "find-it-faster.findWithinFiles"
+    }
+]
+
+// nvim lsp.lua
+
+                    settings = {
+                        python = {
+                            analysis = {
+                                autoSearchPaths = true,
+                                useLibraryCodeForTypes = true,
+                                autoImportCompletions = true,
+                                extraPaths = {
+                                    vim.fn.expand("~/Desktop/yipit/utils"),
+                                    vim.fn.expand("~/Desktop/yipit/saturn"),
+                                },
+                                diagnosticMode = "workspace",
+                            },
+                            pythonPath = vim.fn.exepath("python3"), -- 👈 this shows what python it should use
+                        },
+                    },
+
+
+            formatters_by_ft = {
+                javascript = { "prettier" },
+                typescript = { "prettier" },
+                typescriptreact = { "prettier" },
+                javascriptreact = { "prettier" },
+                css = { "prettier" },
+                html = { "prettier" },
+                yaml = { "prettier" },
+                json = { "prettier" },
+                jsonc = { "prettier" },
+                markdown = { "prettier" },
+                graphql = { "prettier" },
+                svelte = { "prettier" },
+                lua = { "lua-language-server" },
+                python = { "ruff_format" },
